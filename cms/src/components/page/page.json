@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_page_pages",
+  "info": {
+    "displayName": "PageDetails",
+    "icon": "file",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "minLength": 1
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "minLength": 1
+    },
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

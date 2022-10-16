@@ -1,0 +1,51 @@
+{
+    "kind": "collectionType",
+    "collectionName": "common_pages",
+    "info": {
+        "singularName": "common-page",
+        "pluralName": "common-pages",
+        "displayName": "CommonPage",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {
+        "i18n": {
+            "localized": true
+        }
+    },
+    "attributes": {
+        "BaseContent": {
+            "type": "component",
+            "repeatable": false,
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "component": "page.page"
+        },
+        "url": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "string",
+            "unique": true,
+            "required": true,
+            "minLength": 1
+        },
+        "uid": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "uid",
+            "targetField": "url",
+            "required": true
+        }
+    }
+}
